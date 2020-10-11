@@ -1,0 +1,154 @@
+EESchema Schematic File Version 4
+LIBS:sonde-citerne_v2_18F4550-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 1100 1050 1000 450 
+U 5F663B3F
+F0 "PSU" 50
+F1 "file5F663B3E.sch" 50
+$EndSheet
+$Sheet
+S 5500 2550 1000 2200
+U 5F663B42
+F0 "MCU" 50
+F1 "file5F663B41.sch" 50
+F2 "Rx-dataIn" I R 6500 2650 50 
+F3 "Tx-dataOut" O R 6500 2750 50 
+F4 "ICSP-MCLR" I R 6500 4550 50 
+F5 "ICSP-Vss" I R 6500 4450 50 
+F6 "ICSP-Vdd" I R 6500 4350 50 
+F7 "ICSP-PGC" I R 6500 4150 50 
+F8 "ICSP-PGd" I R 6500 4250 50 
+$EndSheet
+Text HLabel 5500 3700 2    50   Input ~ 0
+DB7
+Text HLabel 5500 3800 2    50   Input ~ 0
+DB6
+Text HLabel 5500 3900 2    50   Input ~ 0
+DB5
+Text HLabel 5500 4000 2    50   Input ~ 0
+DB4
+Text HLabel 5500 4200 2    50   Input ~ 0
+E
+Text HLabel 5500 4300 2    50   Input ~ 0
+RW
+Text HLabel 5500 4400 2    50   Input ~ 0
+RS
+$Sheet
+S 9350 4400 1350 1050
+U 5F666C62
+F0 "ICSP" 50
+F1 "file5F666C61.sch" 50
+F2 "ICSP-MCLR" I L 9350 4500 50 
+F3 "ICSP-Vdd" I L 9350 4700 50 
+F4 "ICSP-PGD" I L 9350 4800 50 
+F5 "ICSP-PGC" I L 9350 4900 50 
+F6 "ICSP-Vdd" O L 9350 4600 50 
+$EndSheet
+$Sheet
+S 9400 1750 1000 600 
+U 5F6DA111
+F0 "TTL-RS232" 50
+F1 "file5F6DA110.sch" 50
+F2 "TTL-OUT" I L 9400 1950 50 
+F3 "TTL-IN" O L 9400 1850 50 
+$EndSheet
+Entry Bus Bus
+	2400 5900 2500 6000
+Entry Bus Bus
+	2400 6000 2500 6100
+Entry Bus Bus
+	2400 6100 2500 6200
+Entry Bus Bus
+	2400 6200 2500 6300
+Entry Bus Bus
+	2400 6500 2500 6600
+Entry Bus Bus
+	2400 6600 2500 6700
+Entry Bus Bus
+	2400 6700 2500 6800
+Entry Bus Bus
+	5400 4300 5500 4400
+Entry Bus Bus
+	5400 4200 5500 4300
+Entry Bus Bus
+	5400 4100 5500 4200
+Entry Bus Bus
+	5400 3900 5500 4000
+Entry Bus Bus
+	5400 3800 5500 3900
+Entry Bus Bus
+	5400 3700 5500 3800
+Entry Bus Bus
+	5400 3600 5500 3700
+Wire Wire Line
+	6500 2650 8150 2650
+Wire Wire Line
+	8150 2650 8150 1850
+Wire Wire Line
+	8150 1850 9400 1850
+Wire Wire Line
+	9400 1950 8250 1950
+Wire Wire Line
+	8250 1950 8250 2750
+Wire Wire Line
+	8250 2750 6500 2750
+Entry Bus Bus
+	9250 4400 9350 4500
+Entry Bus Bus
+	9250 4500 9350 4600
+Entry Bus Bus
+	9250 4600 9350 4700
+Entry Bus Bus
+	9250 4700 9350 4800
+Entry Bus Bus
+	9250 4800 9350 4900
+Entry Bus Bus
+	6500 4150 6600 4250
+Entry Bus Bus
+	6500 4250 6600 4350
+Entry Bus Bus
+	6500 4350 6600 4450
+Entry Bus Bus
+	6500 4450 6600 4550
+Entry Bus Bus
+	6500 4550 6600 4650
+Wire Bus Line
+	6600 5000 9250 5000
+$Sheet
+S 1400 5800 1000 1300
+U 5F663B47
+F0 "LCD_Caracteres_Display" 50
+F1 "file5F663B46.sch" 50
+F2 "DB4" I R 2400 5900 50 
+F3 "DB5" I R 2400 6000 50 
+F4 "DB6" I R 2400 6100 50 
+F5 "DB7" I R 2400 6200 50 
+F6 "RS" I R 2400 6500 50 
+F7 "RW" I R 2400 6600 50 
+F8 "E" I R 2400 6700 50 
+$EndSheet
+Wire Bus Line
+	2500 5500 5400 5500
+Wire Bus Line
+	6600 4250 6600 5000
+Wire Bus Line
+	9250 4400 9250 5000
+Wire Bus Line
+	5400 3600 5400 5500
+Wire Bus Line
+	2500 5500 2500 6800
+$EndSCHEMATC
